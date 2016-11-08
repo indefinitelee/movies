@@ -6,5 +6,28 @@
   </head>
   <body>
     <h1>Welcome!</h1>
+      <button type="button">Get All Movies</button>
+
+<script>
+const button = button.addEventListener('click', (event) => {
+  getMovies;
+});
+
+function getMovies {
+  fetch(/api/movies)
+  .then(r => r.json())
+  .then(data => renderMovies(data))
+  .catch(err => console.log(err));
+};
+
+function renderMovies(movies){
+  const body = document.querySelector('body');
+  for (let i = 0; i < movies.length; i++);
+    let containerdiv = document.createElement('div');
+    let pid text content = id.movies[i].id
+}
+
+
+</script>
   </body>
 </html>
